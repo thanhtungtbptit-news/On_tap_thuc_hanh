@@ -1,10 +1,6 @@
-n = int(input("Nhập số lượng phần tử: "))
-
-count = 0  # Biến đếm số chẵn
-
-for i in range(n):
-    x = int(input(f"Nhập số thứ {i + 1}: "))
-    if x % 2 == 0:      # Kiểm tra số chẵn
-        count += 1
-
-print("Có", count, "số chẵn trong dãy.")
+n=int(input("Nhập một số nguyên dương n: "))
+count=0
+for i in range(1,n+1):
+    if n%i==0:
+        count +=1
+print(f"Dãy {n} có {count} số chẵn ")
